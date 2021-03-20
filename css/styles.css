@@ -1,0 +1,78 @@
+:root{
+--Dark-Blue: hsl(240, 38%, 20%);
+--Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+.title{
+  text-align: center;
+  color: var(--Dark-Blue);
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.card{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.card__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url('/images/pattern-bg.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position:10px 10px;
+  height: 325px;
+  transition: transform 0.6s;
+}
+.slides {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25%;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #eee;
+  padding: 0.4em;
+  border-radius: 100px;
+}
+.card__img{
+  max-width: 75%;
+  box-shadow:  0 10px 9px 0 rgba(0,0,0, 0.5);
+  transition: transform 0.6s;
+}
+.card__body{
+  background-image: url('/images/pattern-quotes.svg');
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 50% 0;
+  transition: transform 0.6s;
+}
+.card__info,
+.card__workplace{
+  text-align: center;
+  font-weight: 500;
+  color: var(--Grayish-Blue);
+}
+.card__info{
+  line-height: 1.3em;
+}
+.card__name{
+  text-align: center;
+  color: var(--Dark-Blue);
+  font-weight: 700;
+}
+
+.right{
+  transform: translateX(125%);
+}
+.left{
+  transform: translateX(-105%);
+}

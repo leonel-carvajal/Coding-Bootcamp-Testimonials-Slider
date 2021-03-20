@@ -24,3 +24,4 @@ The designs were created to the following widths:
 
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 - Weights: 300, 500, 700
+##font-family: 'Inter', sans-serif;
