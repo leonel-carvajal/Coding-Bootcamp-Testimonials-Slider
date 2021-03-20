@@ -33,11 +33,10 @@ prev.addEventListener('click', () => {
   if (index < 0) {
     index = data.length-1
   }
-  console.log(index)
   cargar()
 })
 const Incio = () => {
-   card.children[0].children[0].setAttribute('src', data[index].img)
+  card.children[0].children[0].setAttribute('src', data[index].img)
   card.children[1].children[0].textContent = `${data[index].desciption}`
   card.children[1].children[1].textContent = `${data[index].name}`
   card.children[1].children[2].textContent = `${data[index].work}`
