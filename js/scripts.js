@@ -15,7 +15,7 @@ const cargar = () => {
   })
   cardBody.classList.add('left')
   cardBody.addEventListener('transitionend', () => {
-    cardBody.children[0].textContent = `${data[index].desciption}`
+    cardBody.children[0].textContent = `${data[index].description}`
     cardBody.children[1].textContent = `${data[index].name}`
     cardBody.children[2].textContent = `${data[index].work}`
     cardBody.classList.remove('left')
